@@ -1,0 +1,78 @@
+<html>
+<title>Bed Pillow Detail Page</title>
+<head>
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="product-details.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class = "top-right-nav-bar"> <a id="itemCount" class="link-color-white" href="shopping-page.html">View Cart</a> </div>
+
+  <!-- wrap div creates padding around the page  -->
+  <div class="spacing">
+    <h1 style = "font-size:50px">FlipStitch Pillow</h1>
+    <div id="product_layout">
+      <div class="product_image">
+        <img src="https://i.imgur.com/6joIHF8.jpg"/>
+      </div>
+
+      <!-- product info contains the text -->
+      <div class="product_info">
+        <h1 id="product-name">Bed Pillow</h1>
+        <div class="price"> <h2>$49.95</h2></div>
+        <div class="product_description">
+          <p>This is the most luxurious Egyptian Silk Pillow you'll ever feel.</p>
+          <p>Choose in various shapes below.</p>
+        </div>
+        <span class="sku">SKU:253292</span>
+
+        <!-- options contain various ways to customize product -->
+        <div class="options">
+
+          <!-- Allows user to select types of shapes for pillow -->
+          <div class="buying_options">
+           <div class="select">
+             <select id="shape">
+               <option value = "0">Select Pillow Shape</option>
+               <option value = "1">Square</option>
+               <option value = "2">Round</option>
+               <option value = "3">Dog</option>
+               <option value = "4">Bear</option>
+               <option value = "5">Bunny</option>
+               <option value = "6">Cat</option>
+               <option value = "7">Custom</option>
+             </select>
+           </div>
+
+           <!-- Allows text Input -->
+           <input class="custom-message" type="text" placeholder="Add customization requests?">
+           <button>Add Request!</button>
+         </div>
+
+         <!-- Allows user to add quantity -->
+         <div class="buying">
+           <div class="quantity">
+             <label for="quantity">QTY:</label>
+             <input type="text" placeholder="1">
+           </div>
+
+           <!-- Allows user to add to cart (and links to a shopping cart later on) -->
+           <div class="cart">
+             <a href="#" class="add">Add to Cart</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="footer">
+    <a class="link-color" href="index.html">Home</a> | <a class="link-color"  href="about-us.html">About Us</a> | <a class="link-color"  href="index.html">Contact</a>
+  </div>
+</div>
+
+</body>
+</html>

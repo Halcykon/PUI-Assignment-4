@@ -1,0 +1,87 @@
+<html>
+<title>Floor Pouf Detail Page</title>
+<head>
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="product-details.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class = "top-right-nav-bar"> <a id="itemCount" class="link-color-white" href="shopping-page.html">View Cart</a> </div>
+
+  <!-- wrap div creates padding around the page  -->
+  <div class="spacing">
+    <h1 style = "font-size:50px">FlipStitch Pillow</h1>
+    <div id="product_layout">
+      <div class="product_image">
+        <img id="photoReplace" src="https://i.imgur.com/Gy57xJ3.jpg"/>
+      </div>
+
+      <!-- product info contains the text -->
+      <div class="product_info">
+        <h1 class="pouf-title"></h1>
+        <div class="price"> <h2 class="pouf-price"></h2></div>
+        <div class="product_description">
+          <p class="pouf-description"></p>
+          <p class="choice"></p>
+        </div>
+
+        <!-- options contain various ways to customize product -->
+        <div class="options">
+
+          <!-- Allows user to select types of shapes for pillow. onchange automatically updates the JS scrip when something happens -->
+          <div class="buying_options">
+           <div class="select">
+             <select onchange = "updatePillowShape()" id = "shape">
+               <option value = "N/A">Select Pillow Shape</option>
+               <option value = "Pouf-Square">Square</option>
+               <option value = "Pouf-Round">Round</option>
+               <option value = "Pouf-Dog">Dog</option>
+               <option value = "Pouf-Bear">Bear</option>
+               <option value = "Pouf-Bunny">Bunny</option>
+               <option value = "Pouf-Cat">Cat</option>
+               <option value = "Pouf-Custom">Custom</option>
+             </select>
+           </div>
+           <!-- Allows text Input -->
+           <input class="custom-message" type="text" placeholder="Add customization requests?">
+           <button class="addProduct">Add Request!</button>
+         </div>
+
+         <!-- Allows user to add quantity -->
+         <div class="buying">
+           <div class="cart">
+             <a href="shopping-page.html" class="addProduct">Add to Cart</a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="footer">
+
+
+<!-- CAROUSEL -->
+<div id="carousel">
+  <figure id="spinner">
+    <img src="https://i.imgur.com/6joIHF8.jpg" alt>
+    <img src="https://i.imgur.com/ftcb9B3.jpg" alt>
+    <img src="https://i.imgur.com/Gy57xJ3.jpg" alt>
+  </figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+<div class="carousel-description">Check out our other items</div>
+
+    <a class="link-color" href="index.html">Home</a> | <a class="link-color"  href="about-us.html">About Us</a> | <a class="link-color"  href="index.html">Contact</a>
+  </div>
+
+
+</div>
+
+</body>
+</html>

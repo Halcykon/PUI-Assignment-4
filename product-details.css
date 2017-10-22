@@ -1,0 +1,255 @@
+body{
+  background:#efefef;
+  font-size:62.5%;
+}
+h1{
+  font-weight:500;
+}
+img{
+  max-width:100%;
+}
+
+/*wrap div creates padding around the page*/
+.spacing{
+  width:80%;
+  margin:0 auto;
+  padding-top:1px;
+  padding-bottom:30px;
+}
+
+/*sets style for product image*/
+#product_layout .product_image{
+  padding-top: 25px;
+  max-width:320px;
+  float:left;
+}
+
+/*sets style for description right of photo*/
+#product_layout .product_info{
+  width:66%;
+  float:left;
+  margin-left:4%;
+}
+
+/*sets style for title*/
+#product_layout .product_info h1{
+  font-size:3.6em;
+  line-height:.8;
+}
+
+/*sets style for product price*/
+#product_layout .product_info .price{
+  margin-top:-20px;
+  font-size:2.8em;
+  width:20%;
+}
+
+/*sets style for product description*/
+#product_layout .product_info .product_description{
+ font-size:2em;
+}
+
+/*Sets style for different shape offerings*/
+#product_layout .product_info .buying_options{
+  width:45%;
+  float:left;
+}
+
+/*Sets style for custom messages*/
+#product_layout .product_info .custom-message{
+  width:40%;
+  float:left;
+  margin-right: 20px;
+  padding: 1px;
+}
+
+#product_layout .product_info .buying{
+  width:45%;
+  float:left;
+  margin-left:10%;
+}
+
+/*sets style for the menu option*/
+#product_layout .product_info .buying_options .select{
+  width: 100%;
+  max-width:300px;
+  height: 40px;
+  overflow: hidden;
+  background: url('https://i.imgur.com/10e9Roz.png') no-repeat right #FFF;
+  border: 1px solid #ccc;
+  border-radius:3px;
+  margin-top:35px;
+  margin-bottom: 20px;
+}
+
+/*sets style for the tag select*/
+#product_layout .product_info .buying_options select{
+  background: transparent;
+  display:block;
+  width: 300px;
+  padding: 5px;
+  font-size: 2em;
+  line-height: 1;
+  border: 0;
+  border-radius:0;
+  height: 40px;
+  -webkit-appearance: none;
+}
+
+#product_layout .product_info .buying .quantity{
+  font-size:2em;
+  margin-top:35px;
+  width:100%;
+  display:block;
+}
+
+#product_layout .product_info .buying .quantity [type="text"]{
+  width:40px;
+  height:40px;
+  border:1px solid #ccc;
+  border-radius:3px;
+  padding:10px;
+  box-sizing:border-box;
+  font-size:1em;
+}
+
+#product_layout .product_info .buying .cart{
+  margin-top:42px;
+  width:100%;
+  float:left;
+  margin-bottom:20px;
+}
+
+#product_layout .product_info .buying .cart a.addProduct {
+  font-size:2em;
+  color:#FFF;
+  background:#00a900;
+  text-decoration:none;
+  padding:10px 20px;
+  height:40px;
+  border-radius:3px;
+  margin-top: 20px;
+}
+
+/*styles the footer link*/
+.footer {
+  font-size: 1.5em;
+  margin-top: 500px;
+  text-align: center;
+}
+
+/*Creates the top right nav bar, currently only has shopping cart*/
+.top-right-nav-bar {
+  background:rgba(0,0,0,0.6);
+  padding: 10px;
+  float: right;
+  text-align: right;
+  font-size: 1.6em
+}
+
+/*makes links black*/
+.link-color {
+  color:black; text-decoration : none;
+}
+
+/*makes links white*/
+.link-color-white {
+  color:white; text-decoration : none;
+}
+
+/*CAROUSEL*/
+div#carousel {
+  perspective: 1200px;
+  background: #efefef;
+  font-size:0;
+  margin-top: 600px;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 300px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  width: 40%; max-width: 425px;
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent;
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); }
+figure#spinner img:nth-child(2) { transform: rotateY(120deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(240deg); }
+div#carousel ~ span {
+  color: black;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+.carousel-description {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/*SHOPPING CART STYLES*/
+
+.container {
+  padding: 15px;
+  float: left;
+  text-align: left;
+  border-radius: 3px;
+  font-size: 1.6em
+}
+
+.titleHeader {
+  background:rgba(0,0,0,0.8);
+  font-size: 2em;
+  padding: 10px;
+  height: 20px;
+  color: white;
+  padding-bottom:30px;
+}
+
+.left-div-header {
+ width: 40%;
+ float:left;
+ text-align:right;
+}
+
+.subTotal {
+  padding-top: 200px;
+  font-size: 2em;
+}
+
+.right-div {
+ width: 40%;
+ float: left;
+}
+
+.left-div {
+ width: 50%;
+ float:left;
+ text-align:right;
+}
+
+.delete-item {
+  color:#FFF;
+  background:rgba(0,0,0,0.8);
+  border: none;
+  outline: 0;
+  padding: 10px;
+}
+
+/*Makes page responsive*/
+@media (max-width:900px){
+  #product_layout .product_image,#product_layout .product_info,#product_layout .reviews,#product_layout .related,#product_layout .product_info .buying,#product_layout .product_info .buying_options, #product_layout .product_info .social{width:100%; margin-left:0;margin-right:0}
+}
